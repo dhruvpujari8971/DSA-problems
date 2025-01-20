@@ -1,0 +1,16 @@
+# holding alternate elements of an array
+
+
+arr=[22,56,78,93,33,22,66]
+
+n=(len(arr))
+
+def alternate(arr):
+    alt=[]
+    for i in range(0, n, 2):
+        alt.append(arr[i])
+    return alt
+
+alt = alternate(arr)
+
+print(alt)
