@@ -1,19 +1,19 @@
+# find two number from the list which adds up to the given target 
 
-# holding the first and last value of a list
+A=[1,4,7,3,8,5]
+target=7
 
-a=[7,3,9,1,4,2]
-target=(7,2)
 
 def calc():
-
-   first_value=(a[0])
-   sum=-1
-   b=len(a)
-   s=sum+b
-   last_value=(a[s])
-   print(f'{first_value},{last_value}')
+    for i in range (len(A)):
+        for j in range(i+1,len(A)):
+           if A[i] + A[j]==target:
+              print('numbers are',A[i],A[j])
 calc()
-   
+  
+
+
+
 
 
 
